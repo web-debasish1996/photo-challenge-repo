@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Serif', serif;
+}
+main{
+    background: #FAFAFA;
+}
+
+/* header Section Starts */
+
+.header-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 80px 0;
+}
+.header-title{
+    font-size: 36px;
+    font-weight: 700;
+}
+.header-content{
+    width: 439px;
+}
+.content-title{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+.content-description{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Main Section Starts */
+
+.images-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin: 0 150px;
+}
+.image-templete{
+    margin-bottom: 80px;
+}
+.image-gallery{
+    position: relative;
+}
+.image-gallery img{
+    width: 238px;
+    height: 347px;
+}
+.img-title{
+    top: 0;
+    left: 70%;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    position: absolute;
+    font-size: 12px;
+    font-family: PT Serif;
+    font-weight: 400px;
+    line-height: 15px;
+    color: #000000;
+}
+.user-name{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    font-family: 'Poppins', sans-serif;
+}
+.img-2{
+    position: relative;
+    top: 85px;
+}
+.img-5{
+    position: relative;
+    top: 85px;
+    padding-bottom: 80px;
+}
+
+/* footer section */
+.footer-section{
+    width: 100%;
+    background: #f5f7f4;
+    padding: 50px 0;
+}
+.footer-title{
+    text-align: center;
+}
+
+.footer-title .ft-title{
+    font-size: 14px;
+    font-weight: 500;
+    color: #A9A9A9;
+}
+.footer-title .foot-title{
+    font-size: 14px;
+    font-weight: 700;
+    color: #4b4848;
+}
+
+/* Mobile Device Styles */
+
+@media screen and (max-width: 576px) {
+    .images-section{
+        margin-top: 40px;
+    }
+    .header-container{
+        flex-direction: column;
+        padding: 0 30px;
+    }
+    
+    .images-container{
+        margin: 0;
+    }
+    .images-container{
+        grid-template-columns: 1fr 1fr;
+        padding: 30px;
+    }
+    .image-gallery:nth-child(2),
+    .image-gallery:nth-child(3),
+    .image-gallery:nth-child(6) {
+        order: -1;
+    }
+    .image-gallery img{
+        width: 154px;
+        height: 242px;
+    }
+    .img-5{
+        top: 0px;
+    }
+    .img-4, .img-6{
+        position: relative;
+        top: 85px;
+    }
+    
+
+    
+}
